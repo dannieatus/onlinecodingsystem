@@ -1,0 +1,137 @@
+Sending build context to Docker daemon  13.82kB
+Step 1/6 : FROM ubuntu:16.04
+ ---> 7aa3602ab41e
+Step 2/6 : MAINTAINER baokaka
+ ---> Using cache
+ ---> 18203c597937
+Step 3/6 : RUN apt-get update
+ ---> Using cache
+ ---> 5ced184e7891
+Step 4/6 : RUN apt-get install -y openjdk-8-jdk
+ ---> Using cache
+ ---> 4cbf7011d9d7
+Step 5/6 : RUN apt-get install -y python3
+ ---> Using cache
+ ---> 247cc1b354f0
+Step 6/6 : RUN apt-get install -y g++
+ ---> Running in c57dfccab302
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils cpp cpp-5 g++-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1
+  liblsan0 libmpc3 libmpfr4 libmpx0 libquadmath0 libstdc++-5-dev libtsan0
+  libubsan0 linux-libc-dev manpages manpages-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales g++-multilib g++-5-multilib gcc-5-doc
+  libstdc++6-5-dbg gcc-multilib make autoconf automake libtool flex bison gdb
+  gcc-doc gcc-5-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
+  libasan2-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg
+  libmpx0-dbg libquadmath0-dbg glibc-doc libstdc++-5-doc man-browser
+The following NEW packages will be installed:
+  binutils cpp cpp-5 g++ g++-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1
+  liblsan0 libmpc3 libmpfr4 libmpx0 libquadmath0 libstdc++-5-dev libtsan0
+  libubsan0 linux-libc-dev manpages manpages-dev
+0 upgraded, 28 newly installed, 0 to remove and 6 not upgraded.
+Need to get 38.3 MB of archives.
+After this operation, 141 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpfr4 amd64 3.1.4-1 [191 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages all 4.04-2 [1087 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.6 [2311 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Err:23 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-131.157
+  404  Not Found [IP: 91.189.88.161 80]
+Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libstdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [1426 kB]
+Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 g++-5 amd64 5.4.0-6ubuntu1~16.04.10 [8319 kB]
+Get:27 http://archive.ubuntu.com/ubuntu xenial/main amd64 g++ amd64 4:5.3.1-1ubuntu1 [1504 B]
+Get:28 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2048 kB]
+Fetched 37.5 MB in 8s (4609 kB/s)
+[91mE[0m[91m: [0m[91mFailed to fetch http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_4.4.0-131.157_amd64.deb  404  Not Found [IP: 91.189.88.161 80]
+[0m[91m
+[0m[91mE[0m[91m: [0m[91mUnable to fetch some archives, maybe run apt-get update or try with --fix-missing?[0m[91m
+[0mSending build context to Docker daemon  18.94kB
+Step 1/6 : FROM ubuntu:16.04
+ ---> 7aa3602ab41e
+Step 2/6 : MAINTAINER baokaka
+ ---> Using cache
+ ---> 18203c597937
+Step 3/6 : RUN apt-get update
+ ---> Using cache
+ ---> 5ced184e7891
+Step 4/6 : RUN apt-get install -y openjdk-8-jdk
+ ---> Using cache
+ ---> 4cbf7011d9d7
+Step 5/6 : RUN apt-get install -y python3
+ ---> Using cache
+ ---> 247cc1b354f0
+Step 6/6 : RUN apt-get install -y g++
+ ---> Running in b6eb3d7f7152
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils cpp cpp-5 g++-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1
+  liblsan0 libmpc3 libmpfr4 libmpx0 libquadmath0 libstdc++-5-dev libtsan0
+  libubsan0 linux-libc-dev manpages manpages-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-5-locales g++-multilib g++-5-multilib gcc-5-doc
+  libstdc++6-5-dbg gcc-multilib make autoconf automake libtool flex bison gdb
+  gcc-doc gcc-5-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
+  libasan2-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg
+  libmpx0-dbg libquadmath0-dbg glibc-doc libstdc++-5-doc man-browser
+The following NEW packages will be installed:
+  binutils cpp cpp-5 g++ g++-5 gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libgcc-5-dev libgomp1 libisl15 libitm1
+  liblsan0 libmpc3 libmpfr4 libmpx0 libquadmath0 libstdc++-5-dev libtsan0
+  libubsan0 linux-libc-dev manpages manpages-dev
+0 upgraded, 28 newly installed, 0 to remove and 6 not upgraded.
+Need to get 38.3 MB of archives.
+After this operation, 141 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpfr4 amd64 3.1.4-1 [191 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages all 4.04-2 [1087 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.6 [2311 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.10 [7671 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.10 [38.8 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.10 [55.1 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.10 [27.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.10 [8888 B]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.10 [264 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.10 [105 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.10 [244 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.10 [95.3 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.10 [40.1 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.10 [9764 B]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.10 [131 kB]
+Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [2228 kB]
+Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.10 [8426 kB]
+Get:21 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5244 B]
+Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu10 [68.7 kB]
+Err:23 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-131.157
+  404  Not Found [IP: 91.189.88.161 80]
+Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu10 [2079 kB]
+Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libstdc++-5-dev amd64 5.4.0-6ubuntu1~16.04.10 [1426 kB]

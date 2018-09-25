@@ -1,0 +1,22 @@
+<div class="container" *ngIf="problem">
+	<div class="row">
+
+		<div class="col-sm-12 col-md-4">
+			<div>
+				<h2>
+					{{problem.id}}. {{problem.name}}
+				</h2>
+      			<p *ngIf="!modifyMode">{{problem.desc}}</p>
+      			<app-modify-problem *ngIf="modifyMode" [problem]="problem"></app-modify-problem>
+      			<p><button type="button" class="btn btn-primary" (click)="edit()">{{modifyMode ? 'Cancel' : 'Edit'}}</button></p>
+
+				<app-count></app-count>
+			</div>
+		</div>
+
+		<div class="hidden-xs col-sm-12 col-md-8">
+			<app-editor></app-editor>	
+		</div>
+		
+	</div>
+</div>
